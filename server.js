@@ -4,8 +4,10 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const userRoutes = require("./routes/userRoutes");
 const carRoutes = require("./routes/carRoutes");
+const cors = require("cors");
 const path = require("path");
 
+app.use(cors());
 dotenv.config();
 
 const app = express();
